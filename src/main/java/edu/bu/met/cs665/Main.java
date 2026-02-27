@@ -18,19 +18,19 @@ public class Main {
      */
     public static void main(String[] args) {
         // Initialize the Shop
-        Shop retailShop = new Shop("Copley Place Retailer") {
+        Shop retailShop = new Shop("Boston University Retailer") {
             @Override
-            public void registerDriver(Observer o) {
-                
+            public void addDriver(Observer o) {
+
             }
         };
 
         // Create at least 5 Driver instances (The Observers)
-        Driver driver1 = new Driver("Alice", "Van");
-        Driver driver2 = new Driver("Bob", "Taxi");
-        Driver driver3 = new Driver("Charlie", "Scooter");
-        Driver driver4 = new Driver("Diana", "Scooter");
-        Driver driver5 = new Driver("Edward", "Van");
+        Driver driver1 = new Driver("Harry", "Broomstick");
+        Driver driver2 = new Driver("Ron", "Car");
+        Driver driver3 = new Driver("Hermione", "Bike");
+        Driver driver4 = new Driver("Draco", "Scooter");
+        Driver driver5 = new Driver("Neville", "Truck");
 
         // Register the drivers to the shop
         retailShop.addDriver(driver1);
@@ -40,14 +40,13 @@ public class Main {
         retailShop.addDriver(driver5);
 
         // Broadcast a delivery request
-        // This will automatically notify all 5 registered drivers.
-        System.out.println("--- Starting Broadcast ---");
-        retailShop.createDeliveryRequest("ORD-77", "Organic Coffee Beans", "123 Commonwealth Ave");
-        System.out.println("--- Broadcast Complete ---\n");
+        System.out.println("- Starting Broadcast --------------------");
+        retailShop.createDeliveryRequest("6396", "Book", "123 Commonwealth Ave");
+        System.out.println("- Broadcast Complete --------------------\n");
 
-        // Example of flexibility: Remove a driver and broadcast again
-        retailShop.removeDriver(driver3); // Charlie goes offline
-        System.out.println("--- Starting Second Broadcast (Charlie removed) ---");
-        retailShop.createDeliveryRequest("ORD-78", "Tea Set", "725 Albany St");
+        // Remove a driver and broadcast again
+        retailShop.removeDriver(driver3);
+        System.out.println("- Starting Second Broadcast --------------------");
+        retailShop.createDeliveryRequest("7130", "Backpack", "321 Harvard Ave");
     }
 }

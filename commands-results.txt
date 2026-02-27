@@ -1,0 +1,115 @@
+(base) anas@Anas-MacBook-Pro-2 assignment-2 % mvn clean compile
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< edu.bu.met.cs665:assignment-2 >--------------------
+[INFO] Building assignment-2 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ assignment-2 ---
+[INFO] Deleting /Users/anas/Workspace/Projects/Java/CS 665/assignment-2/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ assignment-2 ---
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ assignment-2 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /Users/anas/Workspace/Projects/Java/CS 665/assignment-2/target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.658 s
+[INFO] Finished at: 2026-02-26T23:11:01-05:00
+[INFO] ------------------------------------------------------------------------
+(base) anas@Anas-MacBook-Pro-2 assignment-2 % mvn clean test
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< edu.bu.met.cs665:assignment-2 >--------------------
+[INFO] Building assignment-2 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ assignment-2 ---
+[INFO] Deleting /Users/anas/Workspace/Projects/Java/CS 665/assignment-2/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ assignment-2 ---
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ assignment-2 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 6 source files to /Users/anas/Workspace/Projects/Java/CS 665/assignment-2/target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ assignment-2 ---
+[INFO] skip non existing resourceDirectory /Users/anas/Workspace/Projects/Java/CS 665/assignment-2/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ assignment-2 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/anas/Workspace/Projects/Java/CS 665/assignment-2/target/test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ assignment-2 ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running edu.bu.met.cs665.TestApp
+Chestnut Hill Retailer created a new request: 1001
+Notification to Mike (Bike): Order #1001: Sweater to 100 Huntington Ave
+Chestnut Hill Retailer created a new request: 1002
+Notification to Mike (Bike): Order #1002: Jeans to 84 Lovell St
+Assembly Sq Retailer created a new request: 2000
+Notification to Paolo (Bike): Order #2000: Leather Bag to 200 Eastern Ave
+Copley Place Retailer created a new request: 1995
+Notification to Joey (Van): Order #1995: Suit to 10 Main St
+Notification to Chandler (Car): Order #1995: Suit to 10 Main St
+Notification to Ross (Truck): Order #1995: Suit to 10 Main St
+Notification to Phoebe (Taxi): Order #1995: Suit to 10 Main St
+Notification to Monica (Bike): Order #1995: Suit to 10 Main St
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s -- in edu.bu.met.cs665.TestApp
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.025 s
+[INFO] Finished at: 2026-02-26T23:11:08-05:00
+[INFO] ------------------------------------------------------------------------
+(base) anas@Anas-MacBook-Pro-2 assignment-2 % mvn spotbugs:gui 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< edu.bu.met.cs665:assignment-2 >--------------------
+[INFO] Building assignment-2 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- spotbugs:4.8.2.0:gui (default-cli) @ assignment-2 ---
+[INFO] File Encoding is UTF-8
+     [java] This version of Mac OS X does not support the Apple EAWT. Application Menu handling has been disabled (java.lang.NoClassDefFoundError: com/apple/eawt/ApplicationAdapter)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.829 s
+[INFO] Finished at: 2026-02-26T23:11:19-05:00
+[INFO] ------------------------------------------------------------------------
+(base) anas@Anas-MacBook-Pro-2 assignment-2 % mvn checkstyle:checkstyle
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< edu.bu.met.cs665:assignment-2 >--------------------
+[INFO] Building assignment-2 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- checkstyle:3.6.0:checkstyle (default-cli) @ assignment-2 ---
+[INFO] Rendering content with org.apache.maven.skins:maven-fluido-skin:jar:2.0.0-M9 skin
+[INFO] There are 77 errors reported by Checkstyle 9.3 with sun_checks.xml ruleset.
+[WARNING] Unable to locate Source XRef to link to -- DISABLED
+[WARNING] Unable to locate Test Source XRef to link to -- DISABLED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.120 s
+[INFO] Finished at: 2026-02-26T23:11:26-05:00
+[INFO] ------------------------------------------------------------------------

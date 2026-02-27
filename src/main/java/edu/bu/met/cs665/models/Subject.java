@@ -3,7 +3,7 @@
  * Course: CS-665 Software Designs & Patterns
  * Date: 02/20/2026
  * File Name: Subject.java
- * Description: This class is responsible for .
+ * Description: This class is an interface representing the Subject in the Observer Design Pattern.
  */
 
 package edu.bu.met.cs665.models;
