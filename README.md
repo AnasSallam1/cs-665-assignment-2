@@ -14,9 +14,9 @@ https://github.com/AnasSallam1/cs-665-assignment-2
 
 # Implementation Description
 
-- Flexibility: 
-- Simplicity: 
-- Avoiding duplicated code: 
+- Flexibility: The Shop does not need to know the specific details of the Driver class, it only interacts with the Observer interface. This allows us to add new types of observers modifying the existing Shop code.
+- Simplicity: By separating the tasks into models and services packages, the codebase remains organized and easy to navigate for any developer.
+- Avoiding duplicated code: Instead of writing separate notification logic for each driver, all drivers are treated as a single list of Observer objects. This allows a single for loop in the notifyDrivers method to handle any number of drivers, regardless of their specific implementation.
 
 # Maven Commands
 
