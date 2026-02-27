@@ -11,7 +11,9 @@ package edu.bu.met.cs665.models;
 import edu.bu.met.cs665.services.DeliveryRequest;
 
 public interface Subject {
-    void registerDriver(Observer o);
+
+    void addDriver(Observer o);
+
     void removeDriver(Observer o);
     void notifyDrivers(DeliveryRequest request);
 }

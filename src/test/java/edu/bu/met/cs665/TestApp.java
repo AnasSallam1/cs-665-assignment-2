@@ -10,7 +10,7 @@ package edu.bu.met.cs665;
 
 import edu.bu.met.cs665.models.Driver;
 import edu.bu.met.cs665.models.Shop;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 
 public class TestApp {
@@ -27,11 +27,11 @@ public class TestApp {
         Driver d5 = new Driver("Edward", "Taxi");
 
         // Register them
-        myShop.registerDriver(d1);
-        myShop.registerDriver(d2);
-        myShop.registerDriver(d3);
-        myShop.registerDriver(d4);
-        myShop.registerDriver(d5);
+        myShop.addDriver(d1);
+        myShop.addDriver(d2);
+        myShop.addDriver(d3);
+        myShop.addDriver(d4);
+        myShop.addDriver(d5);
 
         // Broadcast a single request
         myShop.createDeliveryRequest("101", "Gaming Laptop", "456 City Square");
